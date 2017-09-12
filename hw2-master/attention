@@ -1,0 +1,228 @@
+
+(lab1) C:\Users\Duke Li\lab1\2\atten2\hw2-master>#!/bin/bash
+
+(lab1) C:\Users\Duke Li\lab1\2\atten2\hw2-master>echo "Running mt experiment" 
+"Running mt experiment"
+
+(lab1) C:\Users\Duke Li\lab1\2\atten2\hw2-master>source activate mtenv 
+
+(lab1) C:\Users\Duke Li\lab1\2\atten2\hw2-master>python nmt_translate.py 
+Japanese English dataset configuration
+vocab size, en=3713, fr=3949
+--------------------------------------------------
+Training progress will be logged in:
+	model\train_10000sen_1-1layers_100units_ja_en_exp1_SOFT_ATTN.log
+--------------------------------------------------
+Trained model will be saved as:
+	model\seq2seq_10000sen_1-1layers_100units_ja_en_exp1_SOFT_ATTN.model
+--------------------------------------------------
+Existing model not found!
+--------------------------------------------------
+--------------------------------------------------
+precision  | 0.2763
+recall     | 0.2618
+f1         | 0.2688
+--------------------------------------------------
+computing perplexity
+--------------------------------------------------
+dev perplexity | 31.8721
+# words in dev | 4557
+--------------------------------------------------
+Saving model
+Finished saving model
+--------------------------------------------------
+computing bleu
+BLEU: 13.528
+finished computing bleu ... 
+--------------------------------------------------
+--------------------------------------------------
+precision  | 0.2734
+recall     | 0.2862
+f1         | 0.2796
+--------------------------------------------------
+computing perplexity
+--------------------------------------------------
+dev perplexity | 27.7719
+# words in dev | 4557
+--------------------------------------------------
+Saving model
+Finished saving model
+--------------------------------------------------
+--------------------------------------------------
+precision  | 0.2735
+recall     | 0.3000
+f1         | 0.2861
+--------------------------------------------------
+computing perplexity
+--------------------------------------------------
+dev perplexity | 27.1412
+# words in dev | 4557
+--------------------------------------------------
+Saving model
+Finished saving model
+--------------------------------------------------
+computing bleu
+BLEU: 22.248
+finished computing bleu ... 
+--------------------------------------------------
+--------------------------------------------------
+precision  | 0.2844
+recall     | 0.3090
+f1         | 0.2962
+--------------------------------------------------
+computing perplexity
+--------------------------------------------------
+dev perplexity | 28.0382
+# words in dev | 4557
+--------------------------------------------------
+Saving model
+Finished saving model
+--------------------------------------------------
+--------------------------------------------------
+precision  | 0.2769
+recall     | 0.3077
+f1         | 0.2915
+--------------------------------------------------
+computing perplexity
+--------------------------------------------------
+dev perplexity | 29.5320
+# words in dev | 4557
+--------------------------------------------------
+Saving model
+Finished saving model
+--------------------------------------------------
+computing bleu
+BLEU: 23.965
+finished computing bleu ... 
+--------------------------------------------------
+--------------------------------------------------
+precision  | 0.2762
+recall     | 0.3105
+f1         | 0.2924
+--------------------------------------------------
+computing perplexity
+--------------------------------------------------
+dev perplexity | 32.6758
+# words in dev | 4557
+--------------------------------------------------
+Saving model
+Finished saving model
+--------------------------------------------------
+--------------------------------------------------
+precision  | 0.2751
+recall     | 0.3013
+f1         | 0.2876
+--------------------------------------------------
+computing perplexity
+--------------------------------------------------
+dev perplexity | 35.1123
+# words in dev | 4557
+--------------------------------------------------
+Saving model
+Finished saving model
+--------------------------------------------------
+computing bleu
+BLEU: 24.183
+finished computing bleu ... 
+--------------------------------------------------
+--------------------------------------------------
+precision  | 0.2859
+recall     | 0.3052
+f1         | 0.2952
+--------------------------------------------------
+computing perplexity
+--------------------------------------------------
+dev perplexity | 39.1663
+# words in dev | 4557
+--------------------------------------------------
+Saving model
+Finished saving model
+--------------------------------------------------
+--------------------------------------------------
+precision  | 0.2665
+recall     | 0.2969
+f1         | 0.2809
+--------------------------------------------------
+computing perplexity
+--------------------------------------------------
+dev perplexity | 44.7448
+# words in dev | 4557
+--------------------------------------------------
+Saving model
+Finished saving model
+--------------------------------------------------
+computing bleu
+BLEU: 24.615
+finished computing bleu ... 
+--------------------------------------------------
+--------------------------------------------------
+precision  | 0.2905
+recall     | 0.3072
+f1         | 0.2986
+--------------------------------------------------
+computing perplexity
+--------------------------------------------------
+dev perplexity | 48.4426
+# words in dev | 4557
+--------------------------------------------------
+Saving model
+Finished saving model
+--------------------------------------------------
+Training set predictions
+English predictions, s=0, num=3:
+--------------------------------------------------
+Src | ステーキ は 中位 で 焼 い て くださ い 。                                                       
+Ref | i like my steak medium .                                                        
+Hyp | i like my medium medium . _EOS                                                  
+--------------------------------------------------
+precision | 0.7143
+recall | 0.8333
+--------------------------------------------------
+Src | 彼女 の 美し さ に 関 し て は 、 疑 う 余地 が な い 。                                            
+Ref | there is no doubt as to her beauty .                                            
+Hyp | there is no one to her her her her . _EOS                                       
+--------------------------------------------------
+precision | 0.5455
+recall | 0.6667
+--------------------------------------------------
+Src | この 近所 の 家 は どれ も とても よく 似 て い る の で 見分け が つ か な い 。                             
+Ref | all the houses in this neighborhood look so much alike that i can &apos;t tell them apart .
+Hyp | i can &apos;t always that that that can can can so so so so so that so so so so 
+--------------------------------------------------
+precision | 0.2500
+recall | 0.2778
+sentences matching filter = 3
+--------------------------------------------------
+dev set predictions
+English predictions, s=10000, num=3:
+--------------------------------------------------
+Src | この 路地 は 通り抜け でき ま せ ん 。                                                         
+Ref | this is a dead @-@ end alley .                                                  
+Hyp | i can &apos;t make this . . _EOS                                                
+--------------------------------------------------
+precision | 0.2500
+recall | 0.2500
+--------------------------------------------------
+Src | ええ 、 届 い た の を お 知 らせ する の を 忘れ て しま っ て す み ま せ ん 。                            
+Ref | yes , sorry , i forgot to acknowledge it .                                      
+Hyp | to my i i i _UNK i i i i i i i i i i i . i .                                    
+--------------------------------------------------
+precision | 0.1500
+recall | 0.3000
+--------------------------------------------------
+Src | 彼 は ドイツ 生まれ の 人 だ 。                                                             
+Ref | he is a german by origin .                                                      
+Hyp | he is just after were . _EOS                                                    
+--------------------------------------------------
+precision | 0.4286
+recall | 0.4286
+sentences matching filter = 3
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+Finished training. Filenames:
+model\train_10000sen_1-1layers_100units_ja_en_exp1_SOFT_ATTN.log
+model\seq2seq_10000sen_1-1layers_100units_ja_en_exp1_SOFT_ATTN.model
+
+(lab1) C:\Users\Duke Li\lab1\2\atten2\hw2-master>echo "Finished training mt model" 
+"Finished training mt model"
