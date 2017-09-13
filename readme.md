@@ -1,8 +1,8 @@
 This is the folder for machine translation
 
 BLEU (Bilingual Evaluation Understudy) is an efficient way to evaluate the quality of translation considering
-51 the order of words. And it could get the score of similarity between reference and output.
-52 The way to calculate BLEU depends on the n in n-gram we used:
+the order of words. And it could get the score of similarity between reference and output. Basically, BLEU is bigger then the result is better.
+The way to calculate BLEU depends on the n in n-gram we used:
 
 \subsubsection{BLEU}
 BLEU (Bilingual Evaluation Understudy) is an efficient way to evaluate the quality of translation considering the order of words. And it could get the score of similarity between reference and output. 
